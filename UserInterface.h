@@ -6,11 +6,11 @@ struct Params {
     std::string databaseFile;
     std::string logFile;
     uint16_t    port = 33333;
+    bool        run  = false;
 };
 
 class UserInterface {
 public:
-
     bool parseArgs(int argc, char* argv[], Params& params);
     void showHelp(const char* progName) const;
 };
